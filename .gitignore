@@ -34,3 +34,6 @@ google-services.json
 
 # macOS specific
 .DS_Store
+
+# Ignore sensitive files
+app/src/main/res/raw/service_account_key.json
