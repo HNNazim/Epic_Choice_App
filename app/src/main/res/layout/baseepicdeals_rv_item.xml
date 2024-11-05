@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="0dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@drawable/gradient_bluepeachbackground">
+
+        <ImageView
+            android:id="@+id/imgEpicDeals"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tv_Epicdeal_product_name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Scotch Premium"
+            app:layout_constraintStart_toEndOf="@id/imgEpicDeals"
+            app:layout_constraintTop_toTopOf="@id/imgEpicDeals"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/sukarblack1"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="9sp"/>
+
+        <TextView
+            android:id="@+id/tv_old_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@id/tv_Epicdeal_product_name"
+            app:layout_constraintStart_toEndOf="@id/tv_new_price"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:fontFamily="@font/sukarblack3"
+            android:layout_marginStart="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_new_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintStart_toStartOf="@id/tv_Epicdeal_product_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_Epicdeal_product_name"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:fontFamily="@font/sukarblack3"/>
+
+        <com.github.leandroborgesferreira.loadingbutton.customViews.CircularProgressButton
+            android:id="@+id/btn_see_product"
+            style="@style/whiteButtonStyle"
+            android:layout_width="83dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/sukarblack2"
+            android:text="See More"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_Epicdeal_product_name"
+            app:layout_constraintTop_toTopOf="@id/tv_Epicdeal_product_name"
+            tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck" />
+        <LinearLayout
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/themeblue"
+            android:orientation="vertical"
+            android:id="@+id/hearticon">
+            <ImageView
+                android:id="@+id/IVfavHeart"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/ic_favorite"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

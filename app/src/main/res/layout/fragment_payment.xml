@@ -1,0 +1,138 @@
+<!-- res/layout/fragment_payment.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Display Total Order Amount -->
+    <TextView
+        android:id="@+id/tvTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount: $0.00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/sukarblack2"
+        android:textColor="@color/black"/>
+
+    <!-- Payment Method Selection (Dropdown or Buttons) -->
+    <TextView
+        android:id="@+id/tvPaymentMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Payment Method"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/sukarblack2"
+        android:textColor="@color/black"/>
+
+    <Spinner
+        android:id="@+id/spinnerPaymentMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/payment_methods" />
+
+    <!-- Amount to Pay (Input) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Amount to Pay"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/sukarblack2"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/etAmountToPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter amount"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:fontFamily="@font/sukarblack2"
+        android:textColor="@color/black"/>
+
+    <!-- Card Details (Shown only when 'Credit/Debit Card' is selected) -->
+    <LinearLayout
+        android:id="@+id/cardDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card Number"
+            android:fontFamily="@font/sukarblack2"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/etCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1234 5678 9012 3456"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiry Date"
+            android:fontFamily="@font/sukarblack2"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/etExpiryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="MM/YY"
+            android:inputType="date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CVV"
+            android:fontFamily="@font/sukarblack2"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/etCvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="123"
+            android:inputType="numberPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonBackPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/buttonConfirmPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Payment"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

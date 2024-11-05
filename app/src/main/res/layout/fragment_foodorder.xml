@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Food Item Image and Name -->
+    <ImageView
+        android:id="@+id/ItemImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Item Name"
+        android:textSize="20sp"
+       android:fontFamily="@font/sukarblack2"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textFoodPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: $0.00"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sukarblack3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonOrderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Order Date"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"/>
+
+        <TextView
+            android:id="@+id/textOrderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Date: Not selected"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sukarblack3"/>
+
+    </LinearLayout>
+
+    <!-- Quantity Selection for Different Food Items -->
+    <TextView
+        android:id="@+id/textPizzaCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza Count: 0"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sukarblack3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonIncPizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Increase Pizza"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"/>
+
+        <Button
+            android:id="@+id/buttonDecPizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decrease Pizza"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textBurgerCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Burger Count: 0"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sukarblack3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonIncBurger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Increase Burger"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"/>
+
+        <Button
+            android:id="@+id/buttonDecBurger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decrease Burger"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textSaladCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salad Count: 0"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sukarblack3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonIncSalad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Increase Salad"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"/>
+
+        <Button
+            android:id="@+id/buttonDecSalad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decrease Salad"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price: $0.00"
+        android:textSize="20sp"
+        android:fontFamily="@font/sukarblack2"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backOrderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_weight="1"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"/>
+
+        <Button
+            android:id="@+id/confirmOrderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Order"
+            android:backgroundTint="@color/peach"
+            android:layout_weight="1"
+            android:fontFamily="@font/sukarblack2"/>
+
+    </LinearLayout>
+
+</LinearLayout>

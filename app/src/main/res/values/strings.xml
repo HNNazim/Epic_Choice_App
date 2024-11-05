@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Epic_Choice</string>
+    <string name="welcome_to_epic_choice_for">Welcome To Epic Choice For\nan Epicxperience!</string>
+    <string name="welcome">Welcome To Epic Choice For\nAn Epixperience!</string>
+    <string name="hey">Hey There,\nWelcome To Epic Choice To Experience  The Beauty Of \nSri Lanka - The Little Paradise.\nWith Epic Choice It will Be An Epixperience!</string>
+    <string name="lets">Let\'s Register</string>
+    <string name="lets_">LET\'S REGISTER</string>
+    <string name="login">Do You Have An Account?</string>
+    <string name="lets_Login">Let\'s Login</string>
+    <string name="register">Don\'t Have An Account?</string>
+    <string name="next_activity_name">nextactivity</string>
+
+<string-array name="language_array">
+    <item>English</item>
+    <item>Spanish</item>
+    <item>French</item>
+    <item>German</item>
+    <item>Sinhala</item>
+    <item>Tamil</item>
+    <item>Russian</item>
+    <item>Hindi</item>
+    <!-- Add more languages as needed -->
+</string-array>
+
+</resources>

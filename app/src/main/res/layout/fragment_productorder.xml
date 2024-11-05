@@ -1,0 +1,172 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/ItemImageView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textSize="20sp"
+        android:fontFamily="@font/sukarblack2"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: $0.00"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sukarblack3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textSelectColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected Color"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sukarblack2"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgColorSelect"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:src="@color/themeblue"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="3dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textSelectSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected Size"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sukarblack2"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgSizeSelect"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:src="@color/lightgray"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+            android:id="@+id/TVSizes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sukarblack2"
+            android:layout_marginStart="-14dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvNoofItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Of Items"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/sukarblack2"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/buttonIncItem"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvItemCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/sukarblack2"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/buttonDecItem"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonBackPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/buttonConfirmPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Payment"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

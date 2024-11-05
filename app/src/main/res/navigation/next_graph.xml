@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/next_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.epic_choice.fragments.next.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout ="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_seeMoreFragment"
+            app:destination="@id/seeMoreFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_translatorFragment"
+            app:destination="@id/translatorFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.example.epic_choice.fragments.next.ExploreFragment"
+        android:label="ExploreFragment"
+        tools:layout="@layout/fragment_explore">
+        <action
+            android:id="@+id/action_exploreFragment_to_seeMoreFragment"
+            app:destination="@id/seeMoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookingsFragment"
+        android:name="com.example.epic_choice.fragments.next.BookingsFragment"
+        android:label="BookingsFragment"
+        tools:layout="@layout/fragment_bookings">
+        <action
+            android:id="@+id/action_bookingsFragment_to_seeMoreFragment"
+            app:destination="@id/seeMoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.epic_choice.fragments.next.FavoritesFragment"
+        android:label="FavoritesFragment"
+        tools:layout="@layout/fragment_favorites">
+        <action
+            android:id="@+id/action_favoritesFragment_to_seeMoreFragment"
+            app:destination="@id/seeMoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.epic_choice.fragments.next.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_addressFragment"
+            app:destination="@id/addressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seeMoreFragment"
+        android:name="com.example.epic_choice.fragments.next.SeeMoreFragment"
+        android:label="SeeMoreFragment"
+        tools:layout="@layout/fragment_seemore">
+        <argument
+            android:name="product"
+            app:argType="com.example.epic_choice.data.Product" />
+        <action
+            android:id="@+id/action_seeMoreFragment_to_vehicleBookingFragment32"
+            app:destination="@id/vehicleBookingFragment" />
+        <action
+            android:id="@+id/action_seeMoreFragment_to_tourGuideBookingFragment"
+            app:destination="@id/tourGuideBookingFragment" />
+        <action
+            android:id="@+id/action_seeMoreFragment_to_tourPackBookingFragment"
+            app:destination="@id/tourPackBookingFragment" />
+        <action
+            android:id="@+id/action_seeMoreFragment_to_otherBookingsFragment"
+            app:destination="@id/otherBookingsFragment" />
+        <action
+            android:id="@+id/action_seeMoreFragment_to_hotelBookingFragment"
+            app:destination="@id/hotelBookingFragment" />
+        <action
+            android:id="@+id/action_seeMoreFragment_to_foodOrderFragment"
+            app:destination="@id/foodOrderFragment" />
+        <action
+            android:id="@+id/action_seeMoreFragment_to_productOrderFragment"
+            app:destination="@id/productOrderFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/vehicleBookingFragment"
+        android:name="com.example.epic_choice.fragments.allbookings.VehicleBookingFragment"
+        android:label="Vehicle Booking"
+        tools:layout="@layout/fragment_vehicles_booking">
+        <argument
+            android:name="product"
+            app:argType="com.example.epic_choice.data.Product" />
+        <action
+            android:id="@+id/action_vehicleBookingFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/translatorFragment"
+        android:name="com.example.epic_choice.fragments.next.TranslatorFragment"
+        android:label="TranslatorFragment"
+        app:action="t"
+        tools:layout="@layout/fragment_translator" >
+        <action
+            android:id="@+id/action_translatorFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tourGuideBookingFragment"
+        android:name="com.example.epic_choice.fragments.allbookings.TourGuideBookingFragment"
+        android:label="TourGuideBookingFragment"
+        tools:layout="@layout/fragment_vehicles_booking">
+        <argument
+            android:name="product"
+            app:argType="com.example.epic_choice.data.Product" />
+        <action
+            android:id="@+id/action_tourGuideBookingFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.epic_choice.fragments.next.MapFragment"
+        android:label="MapFragment"
+        tools:layout="@layout/fragment_maps">
+        <action
+            android:id="@+id/action_mapFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tourPackBookingFragment"
+        android:name="com.example.epic_choice.fragments.allbookings.TourPackBookingFragment"
+        android:label="TourPackBookingFragment"
+        tools:layout="@layout/fragment_tpackagebookings">
+        <action
+            android:id="@+id/action_tourPackBookingFragment_to_seeMoreFragment"
+            app:destination="@id/seeMoreFragment" />
+        <argument
+            android:name="product"
+            app:argType="com.example.epic_choice.data.Product" />
+        <action
+            android:id="@+id/action_tourPackBookingFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otherBookingsFragment"
+        android:name="com.example.epic_choice.fragments.allbookings.OtherBookingsFragment"
+        android:label="OtherBookingsFragment"
+        tools:layout="@layout/fragment_otherbookings">
+        <action
+            android:id="@+id/action_otherBookingsFragment_to_seeMoreFragment"
+            app:destination="@id/seeMoreFragment" />
+        <argument
+            android:name="product"
+            app:argType="com.example.epic_choice.data.Product" />
+        <action
+            android:id="@+id/action_otherBookingsFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotelBookingFragment"
+        android:name="com.example.epic_choice.fragments.allbookings.HotelBookingFragment"
+        android:label="HotelBookingFragment"
+        tools:layout="@layout/fragment_hotelbooking">
+        <action
+            android:id="@+id/action_hotelBookingFragment_to_seeMoreFragment"
+            app:destination="@id/seeMoreFragment" />
+        <argument
+            android:name="product"
+            app:argType="com.example.epic_choice.data.Product" />
+        <action
+            android:id="@+id/action_hotelBookingFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodOrderFragment"
+        android:name="com.example.epic_choice.fragments.allbookings.FoodOrderFragment"
+        android:label="FoodOrderFragment"
+        tools:layout="@layout/fragment_foodorder">
+        <action
+            android:id="@+id/action_foodOrderFragment_to_seeMoreFragment"
+            app:destination="@id/seeMoreFragment" />
+        <argument
+            android:name="product"
+            app:argType="com.example.epic_choice.data.Product" />
+        <action
+            android:id="@+id/action_foodOrderFragment_to_payAndDeliverFragment"
+            app:destination="@id/payAndDeliverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addressFragment"
+        android:name="com.example.epic_choice.fragments.next.AddressFragment"
+        android:label="AddressFragment"
+        tools:layout="@layout/fragment_address">
+        <action
+            android:id="@+id/action_addressFragment_to_payAndDeliverFragment"
+            app:destination="@id/payAndDeliverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.epic_choice.fragments.next.PaymentFragment"
+        android:label="PaymentFragment"
+        tools:layout="@layout/fragment_payment">
+        <argument
+            android:name="totalAmount"
+            app:argType="float" />
+    </fragment>
+    <fragment
+        android:id="@+id/productOrderFragment"
+        android:name="com.example.epic_choice.fragments.allbookings.ProductOrderFragment"
+        android:label="ProductOrderFragment"
+        tools:layout="@layout/fragment_productorder">
+        <argument
+            android:name="itemName"
+            app:argType="string"/>
+        <argument
+            android:name="itemImage"
+            app:argType="string" />
+        <argument
+            android:name="itemPrice"
+            app:argType="float" />
+        <argument
+            android:name="itemColor"
+            app:argType="string" />
+        <argument
+            android:name="itemSize"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_productOrderFragment_to_seeMoreFragment"
+            app:destination="@id/seeMoreFragment" />
+        <argument
+            android:name="product"
+            app:argType="com.example.epic_choice.data.Product" />
+        <action
+            android:id="@+id/action_productOrderFragment_to_payAndDeliverFragment"
+            app:destination="@id/payAndDeliverFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/payAndDeliverFragment"
+        android:name="com.example.epic_choice.fragments.next.PayAndDeliverFragment"
+        android:label="PayAndDeliverFragment"
+        tools:layout="@layout/fragment_paymentanddelivery">
+        <argument
+            android:name="totalAmount"
+            app:argType="float" />
+        <action
+            android:id="@+id/action_payAndDeliverFragment_to_foodOrderFragment"
+            app:destination="@id/foodOrderFragment" />
+        <action
+            android:id="@+id/action_payAndDeliverFragment_to_productOrderFragment"
+            app:destination="@id/productOrderFragment" />
+        <action
+            android:id="@+id/action_payAndDeliverFragment_to_addressFragment"
+            app:destination="@id/addressFragment" />
+    </fragment>
+
+</navigation>

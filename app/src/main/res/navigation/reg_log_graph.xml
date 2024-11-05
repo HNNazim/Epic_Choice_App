@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reg_log_graph"
+    app:startDestination="@id/firstpagefragment2">
+
+    <fragment
+        android:id="@+id/firstpagefragment2"
+        android:name="com.example.epic_choice.fragments.regLog.firstpagefragment"
+        android:label="firstpagefragment"
+        tools:layout="@layout/fragment_firstpage">
+        <action
+            android:id="@+id/action_firstpagefragment2_to_reglogfragment2"
+            app:destination="@id/reglogfragment2"
+            app:enterAnim="@anim/from_bottom" />
+    </fragment>
+    <fragment
+        android:id="@+id/reglogfragment2"
+        android:name="com.example.epic_choice.fragments.regLog.reglogfragment"
+        android:label="reglogfragment"
+        tools:layout="@layout/fragment_reglog">
+        <action
+            android:id="@+id/action_reglogfragment2_to_regfragment2"
+            app:destination="@id/regfragment2"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+        <action
+            android:id="@+id/action_reglogfragment2_to_loginfragment2"
+            app:destination="@id/loginfragment2"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/regfragment2"
+        android:name="com.example.epic_choice.fragments.regLog.regfragment"
+        android:label="regfragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_regfragment2_to_loginfragment2"
+            app:destination="@id/loginfragment2"
+            app:enterAnim="@anim/from_bottom"
+            app:popUpTo="@id/reglogfragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginfragment2"
+        android:name="com.example.epic_choice.fragments.regLog.loginfragment"
+        android:label="loginfragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginfragment2_to_regfragment2"
+            app:destination="@id/regfragment2"
+            app:enterAnim="@anim/from_bottom"
+            app:popUpTo="@id/reglogfragment2" />
+    </fragment>
+</navigation>

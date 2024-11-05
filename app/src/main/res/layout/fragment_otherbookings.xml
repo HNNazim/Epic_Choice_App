@@ -1,0 +1,129 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imgPacksview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tourNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tour Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/sukarblack2"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/pricePerPersonTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price per person"
+        android:fontFamily="@font/sukarblack3"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/peopleCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="18sp"
+        android:fontFamily="@font/sukarblack2"
+        android:textColor="@color/black"
+        android:layout_marginStart="180dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/increasePeopleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Increase People"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/decreasePeopleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decrease People"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dateSelectButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select a Date"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/dateSelectTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selected Date"
+            android:fontFamily="@font/sukarblack2"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price"
+        android:fontFamily="@font/sukarblack2"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backBookingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_weight="1"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"/>
+
+        <Button
+            android:id="@+id/confirmBookingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Booking"
+            android:layout_weight="1"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"/>
+
+    </LinearLayout>
+
+</LinearLayout>

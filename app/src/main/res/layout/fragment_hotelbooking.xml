@@ -1,0 +1,477 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/hotelimgView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <TextView
+            android:id="@+id/textHotelName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:text="Hotel Name"
+            android:fontFamily="@font/sukarblack2"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textHotelPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:text="Hotel Price"
+            android:fontFamily="@font/sukarblack3"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <Button
+                android:id="@+id/buttonCheckInDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Check-In Date"
+                android:layout_weight="1"
+                android:backgroundTint="@color/peach"
+                android:fontFamily="@font/sukarblack2"/>
+
+            <TextView
+                android:id="@+id/textCheckInDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sukarblack2"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <Button
+                android:id="@+id/buttonCheckOutDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Check-Out Date"
+                android:layout_weight="1"
+                android:backgroundTint="@color/peach"
+                android:fontFamily="@font/sukarblack2"/>
+
+            <TextView
+                android:id="@+id/textCheckOutDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sukarblack2"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/textsingleRoom"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="Single Bedroom"
+                android:fontFamily="@font/sukarblack3"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textsingleRoomprice"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text=""
+                android:fontFamily="@font/sukarblack3"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/buttonincSingleRoom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:backgroundTint="@color/peach"
+                android:fontFamily="@font/sukarblack2"/>
+
+            <TextView
+                android:id="@+id/textsingleRoomCount"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingStart="16dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sukarblack2"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/buttondecSingleRoom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:backgroundTint="@color/peach"
+                android:fontFamily="@font/sukarblack2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/textDoubleRoom"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="Double Bedroom"
+                android:fontFamily="@font/sukarblack3"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textdblRoomprice"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text=""
+                android:fontFamily="@font/sukarblack3"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/buttonincDoubleRoom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:backgroundTint="@color/peach"
+                android:fontFamily="@font/sukarblack2"/>
+
+            <TextView
+                android:id="@+id/textDoubleRoomCount"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingStart="16dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sukarblack2"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/buttondecDoubleRoom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:backgroundTint="@color/peach"
+                android:fontFamily="@font/sukarblack2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/textKingRoom"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="King Bedroom"
+                android:fontFamily="@font/sukarblack3"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/textkingRoomprice"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text=""
+                android:fontFamily="@font/sukarblack3"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/buttonincKingRoom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:backgroundTint="@color/peach"
+                android:fontFamily="@font/sukarblack2"/>
+
+            <TextView
+                android:id="@+id/textKingRoomCount"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingStart="16dp"
+                android:text="0"
+                android:fontFamily="@font/sukarblack2"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/buttondecKingRoom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:backgroundTint="@color/peach"
+                android:fontFamily="@font/sukarblack2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/textQueenRoom"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="Queen Bedroom"
+                android:fontFamily="@font/sukarblack3"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textqueenRoomprice"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text=""
+                android:fontFamily="@font/sukarblack3"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/buttonincQueenRoom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:backgroundTint="@color/peach"
+                android:fontFamily="@font/sukarblack2"/>
+
+            <TextView
+                android:id="@+id/textQueenRoomCount"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingStart="16dp"
+                android:fontFamily="@font/sukarblack2"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/buttondecQueenRoom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:backgroundTint="@color/peach"
+                android:fontFamily="@font/sukarblack2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/textDeluxeRoom"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="Deluxe Bedroom"
+                android:fontFamily="@font/sukarblack3"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textdeluxeRoomprice"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text=""
+                android:fontFamily="@font/sukarblack3"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/buttonincDeluxeeRoom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:backgroundTint="@color/peach"
+                android:fontFamily="@font/sukarblack2"/>
+
+            <TextView
+                android:id="@+id/textDeluxeRoomCount"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingStart="16dp"
+                android:fontFamily="@font/sukarblack2"
+                android:textColor="@color/black"
+                android:text="0"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/buttondecDeluxeRoom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:backgroundTint="@color/peach"
+                android:fontFamily="@font/sukarblack2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/textFamilyRoom"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="Family Room"
+                android:fontFamily="@font/sukarblack3"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textfamilyRoomprice"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text=""
+                android:fontFamily="@font/sukarblack3"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/buttonincFamilyRoom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:backgroundTint="@color/peach"
+                android:fontFamily="@font/sukarblack2"/>
+
+            <TextView
+                android:id="@+id/textFamilyRoomCount"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingStart="16dp"
+                android:fontFamily="@font/sukarblack2"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/buttondecFamilyRoom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:backgroundTint="@color/peach"
+                android:fontFamily="@font/sukarblack2"/>
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textTotalRooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="Total Rooms: 0"
+        android:fontFamily="@font/sukarblack3"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:layout_weight="1"
+        android:text="Total Price: $0"
+        android:fontFamily="@font/sukarblack3"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+</LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/backBookingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/peach"
+                android:fontFamily="@font/sukarblack2"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/confirmBookingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm Booking"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/peach"
+                android:layout_marginStart="140dp"
+                android:fontFamily="@font/sukarblack2"
+                android:textSize="15sp"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

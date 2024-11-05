@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Source Text Input -->
+    <EditText
+        android:id="@+id/source_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text to translate"
+        android:inputType="textMultiLine"
+        android:fontFamily="@font/sukarblack3"
+        android:lines="4"
+        android:gravity="top"
+        android:padding="8dp" />
+
+    <!-- Language Selection -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <Spinner
+            android:id="@+id/source_language"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/language_array" />
+
+        <Spinner
+            android:id="@+id/target_language"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/language_array" />
+    </LinearLayout>
+
+    <!-- Translate Button -->
+    <Button
+        android:id="@+id/translate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Translate"
+        android:backgroundTint="@color/peach"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/sukarblack2"
+        android:textSize="15sp"/>
+
+    <!-- Translated Text Output -->
+
+    <TextView
+        android:id="@+id/translated_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Translation will appear here"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:fontFamily="@font/sukarblack3"/>
+
+    <Button
+        android:id="@+id/translatorbackbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:backgroundTint="@color/peach"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sukarblack2"
+        android:textSize="15sp"/>
+
+
+</LinearLayout>
+
+

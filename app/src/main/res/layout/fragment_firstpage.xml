@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_fullbackground">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLwelcomeRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLwelcomeBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       app:layout_constraintGuide_percent="0.35" />
+
+    <ImageView
+        android:id="@+id/IVwelcome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:rotation="334.5"
+        app:layout_constraintBottom_toBottomOf="@id/GLwelcomeBottom"
+        app:layout_constraintEnd_toEndOf="@id/GLwelcomeRight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/welcome"
+        android:elevation="8dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLwelcome2Left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.38" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLwelcome2Top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLwelcome2Bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.56" />
+
+    <ImageView
+        android:id="@+id/IVwelcome2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:rotation="23.3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/GLwelcome2Left"
+        app:layout_constraintTop_toTopOf="@id/GLwelcome2Top"
+        app:layout_constraintBottom_toBottomOf="@id/GLwelcome2Bottom"
+        app:srcCompat="@drawable/welcome2"
+        android:elevation="6dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLwelcome3Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.64" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLwelcome3Bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <ImageView
+        android:id="@+id/IVwelcome3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:rotation="330"
+        app:layout_constraintBottom_toBottomOf="@id/GLwelcome3Bottom"
+        app:layout_constraintEnd_toEndOf="@id/GLwelcome3Right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/GLwelcomeBottom"
+        app:srcCompat="@drawable/welcome3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLlogoTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLlogoBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72" />
+
+    <ImageView
+        android:id="@+id/IVLogoe"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/circle_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/GLlogoBottom"
+        app:layout_constraintEnd_toEndOf="@id/GLwelcome3Right"
+        app:layout_constraintStart_toStartOf="@id/GLwelcome2Left"
+        app:layout_constraintTop_toTopOf="@id/GLwelcome3Bottom"
+        app:srcCompat="@drawable/logo_e"
+        app:layout_constraintDimensionRatio="1:1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLtextTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLtextBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLtextLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLtextRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <TextView
+        android:id="@+id/TVwelcome"
+        style="@style/h4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:text="@string/welcome"
+        app:layout_constraintEnd_toEndOf="@id/GLtextRight"
+        app:layout_constraintStart_toStartOf="@id/GLtextLeft"
+        app:layout_constraintTop_toTopOf="@id/GLtextTop"
+        app:layout_constraintBottom_toBottomOf="@id/GLtextBottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLbuttonBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLbuttonLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLbuttonRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65 " />
+
+    <Button
+        android:id="@+id/BtnStart"
+        style="@style/whiteButtonStyle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:fontFamily="@font/sukarblack1"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/GLbuttonRight"
+        app:layout_constraintStart_toStartOf="@id/GLbuttonLeft"
+        app:layout_constraintTop_toTopOf="@id/GLtextBottom"
+        app:layout_constraintBottom_toBottomOf="@id/GLbuttonBottom"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

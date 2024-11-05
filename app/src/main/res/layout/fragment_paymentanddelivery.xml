@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- Display Total Order Amount -->
+    <TextView
+        android:id="@+id/tvTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount: $0.00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/sukarblack2"
+        android:textColor="@color/black"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAddresses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:clipToPadding="false"
+        android:scrollbars="horizontal"
+        android:orientation="horizontal"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="text"
+            android:fontFamily="@font/sukarblack2"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imgAddAddress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_plus"
+            android:layout_marginStart="8dp"
+            android:background="@color/peach" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPaymentMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Payment Method"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/sukarblack2"
+        android:textColor="@color/black"/>
+
+    <Spinner
+        android:id="@+id/spinnerPaymentMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/payment_methods" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Amount to Pay"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/sukarblack2"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/etAmountToPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter amount"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:fontFamily="@font/sukarblack2"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/cardDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card Number"
+            android:fontFamily="@font/sukarblack2"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/etCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1234 5678 9012 3456"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiry Date"
+            android:fontFamily="@font/sukarblack2"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/etExpiryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="MM/YY"
+            android:inputType="date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CVV"
+            android:fontFamily="@font/sukarblack2"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/etCvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="123"
+            android:inputType="numberPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/buttonBackPayment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/buttonConfirmPayment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Confirm Payment"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/peach"
+            android:fontFamily="@font/sukarblack2"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

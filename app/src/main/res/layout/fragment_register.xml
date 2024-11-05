@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/themebg2_removebg_preview">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLlogoLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLlogoRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLlogoTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLlogoBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <ImageView
+        android:id="@+id/IVLogoe"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/circle_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/GLlogoBottom"
+        app:layout_constraintEnd_toEndOf="@id/GLlogoRight"
+        app:layout_constraintStart_toStartOf="@id/GLlogoLeft"
+        app:layout_constraintTop_toTopOf="@id/GLlogoTop"
+        app:srcCompat="@drawable/logo_e"
+        app:layout_constraintDimensionRatio="1:1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLtextLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLtextRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLtextTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLtextBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/h4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/sukarblack1"
+        android:textSize="30sp"
+        android:text="@string/lets_"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/GLtextRight"
+        app:layout_constraintStart_toStartOf="@id/GLtextLeft"
+        app:layout_constraintTop_toTopOf="@id/GLtextTop"
+        app:layout_constraintBottom_toBottomOf="@id/GLtextBottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLtext2Top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.31" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLtex2tBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLtext2Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/h5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/login"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/GLtext2Right"
+        app:layout_constraintStart_toStartOf="@id/GLtextLeft"
+        app:layout_constraintTop_toTopOf="@id/GLtext2Top"
+        app:layout_constraintBottom_toBottomOf="@id/GLtex2tBottom"/>
+
+    <Button
+        android:id="@+id/regbuttonlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sukarblack1"
+        android:background="@android:color/transparent"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/GLtext2Right"
+        app:layout_constraintTop_toBottomOf="@id/GLtextBottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLFNTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLFNBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <EditText
+        android:id="@+id/ETFName"
+        style="@style/editText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="First Name"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/GLFNBottom"
+        app:layout_constraintEnd_toEndOf="@id/GLtextRight"
+        app:layout_constraintStart_toStartOf="@id/GLtextLeft"
+        app:layout_constraintTop_toTopOf="@id/GLFNTop"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLLNTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLLNBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.51" />
+
+    <EditText
+        android:id="@+id/ETLName"
+        style="@style/editText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="Last Name"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/GLLNBottom"
+        app:layout_constraintEnd_toEndOf="@id/GLtextRight"
+        app:layout_constraintStart_toStartOf="@id/GLtextLeft"
+        app:layout_constraintTop_toTopOf="@id/GLLNTop"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLemailTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLemailBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59" />
+
+    <EditText
+        android:id="@+id/ETEmailAddress"
+        style="@style/editText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/GLemailBottom"
+        app:layout_constraintEnd_toEndOf="@id/GLtextRight"
+        app:layout_constraintStart_toStartOf="@id/GLtextLeft"
+        app:layout_constraintTop_toTopOf="@id/GLemailTop"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLpasswordTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.61" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLpasswordBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <EditText
+        android:id="@+id/ETPassword"
+        style="@style/editText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/GLpasswordBottom"
+        app:layout_constraintEnd_toEndOf="@id/GLtextRight"
+        app:layout_constraintStart_toStartOf="@id/GLtextLeft"
+        app:layout_constraintTop_toTopOf="@id/GLpasswordTop"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLregButtonTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.69" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLregButtonBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.77" />
+
+    <com.github.leandroborgesferreira.loadingbutton.customViews.CircularProgressButton
+        android:id="@+id/ButtonRegister"
+        style="@style/peachButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="REGISTER"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/GLtextRight"
+        app:layout_constraintStart_toStartOf="@id/GLtextLeft"
+        app:layout_constraintTop_toTopOf="@id/GLregButtonTop"
+        app:layout_constraintBottom_toBottomOf="@id/GLregButtonBottom"
+        app:spinning_bar_color="@color/peach"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLimgButtonTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLimgButtonBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLimgButtonRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Facebook logo button"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="@id/GLimgButtonRight"
+        app:layout_constraintStart_toStartOf="@id/GLtextLeft"
+        app:layout_constraintTop_toTopOf ="@id/GLimgButtonTop"
+        app:layout_constraintBottom_toBottomOf="@id/GLimgButtonBottom"
+        app:srcCompat="@drawable/fb_logo" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/sukarblack2"
+        android:text="Facebook"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@id/GLimgButtonRight"
+        app:layout_constraintTop_toTopOf="@id/GLimgButtonTop"
+        app:layout_constraintBottom_toBottomOf="@id/GLimgButtonBottom"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Google logo button"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="@id/GLlogoRight"
+        app:layout_constraintTop_toTopOf="@id/GLimgButtonTop"
+        app:layout_constraintBottom_toBottomOf="@id/GLimgButtonBottom"
+        app:srcCompat="@drawable/google_logo" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/sukarblack2"
+        android:text="Google"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@id/GLlogoRight"
+        app:layout_constraintTop_toTopOf="@id/GLimgButtonTop"
+        app:layout_constraintBottom_toBottomOf="@id/GLimgButtonBottom"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

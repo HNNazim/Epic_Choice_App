@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/themebg2_removebg_preview">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GLboxLogoLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GLboxLogoRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.66" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GLboxLogoTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.10" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GLboxLogoBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <ImageView
+            android:id="@+id/IVboxLogo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/GLboxLogoBottom"
+            app:layout_constraintEnd_toEndOf="@id/GLboxLogoRight"
+            app:layout_constraintStart_toStartOf="@id/GLboxLogoLeft"
+            app:layout_constraintTop_toTopOf="@id/GLboxLogoTop"
+            app:srcCompat="@drawable/logo1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GLtext2Top"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.32" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GLtext2Bottom"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.62" />
+
+        <TextView
+            android:id="@+id/TVtext2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/hey"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:fontFamily="@font/sukarblack3"
+            app:layout_constraintEnd_toEndOf="@id/GLRLButtonRight"
+            app:layout_constraintStart_toStartOf="@id/GLRLButtonLeft"
+            app:layout_constraintTop_toTopOf="@id/GLtext2Top"
+            app:layout_constraintBottom_toBottomOf="@id/GLtext2Bottom"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GLregButtonTop"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GLregButtonBottom"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GLRLButtonLeft"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GLRLButtonRight"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <Button
+            android:id="@+id/btnReg"
+            style="@style/peachButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:text="REGISTER"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/GLRLButtonRight"
+            app:layout_constraintStart_toStartOf="@id/GLRLButtonLeft"
+            app:layout_constraintTop_toTopOf="@id/GLregButtonTop"
+            app:layout_constraintBottom_toBottomOf="@id/GLregButtonBottom"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GLLogButtonTop"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.77" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GLLogButtonBottom"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.87" />
+
+
+        <Button
+            android:id="@+id/btnLog"
+            style="@style/peachButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:text="LOGIN"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/GLRLButtonRight"
+            app:layout_constraintStart_toStartOf="@id/GLRLButtonLeft"
+            app:layout_constraintTop_toTopOf="@id/GLLogButtonTop"
+            app:layout_constraintBottom_toBottomOf="@id/GLLogButtonBottom"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

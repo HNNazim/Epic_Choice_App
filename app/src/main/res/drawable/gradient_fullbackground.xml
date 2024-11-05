@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Gradient background layer -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#E60D0D"
+                android:centerColor="#ED6016"
+                android:endColor="#0DDFE6"
+                android:angle="50" />
+        </shape>
+    </item>
+
+
+        <!-- Border Layer -->
+    <item android:left="30dp" android:right="30dp" android:top="30dp" android:bottom="30dp">
+            <shape android:shape="rectangle">
+                <!-- Set the border color -->
+                <solid android:color="@android:color/transparent" />
+                <!-- Border thickness -->
+                <stroke
+                    android:width="6dp"
+                    android:color="#FFFFFF" /> <!-- Change to your desired color -->
+                <!-- Optional: Rounded corners -->
+                <corners android:radius="8dp" />
+            </shape>
+        </item>
+
+    </layer-list>
+
+
+
