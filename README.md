@@ -4,12 +4,12 @@
 Epic Choice is an innovative tourist guide app designed to enhance your travel experience in Sri Lanka. Whether you're looking for accommodation, local dining, transportation, or unique experiences, Epic Choice provides a seamless platform to help you discover the best options available. 
 
 ### Key Features
-- **Epic Ride:** Find local transport options, including taxis, bike rentals, and scenic transportation experiences.
+- **Epic Guide:** Access local guides, safety tips, and language support.
+- **Epic Ride:** Find local transport options, including taxis, bike rentals, map, and scenic transportation experiences.
 - **Epic Stay:** Browse and book a variety of accommodations from hotels to unique stays like treehouses and houseboats.
 - **Epic Dine:** Discover top-rated restaurants, cafes, and local food tours.
-- **Epic Buy:** Explore shopping destinations and local products.
 - **Epic Experiences:** Stay updated on local events, festivals, and activities.
-- **Epic Guide:** Access local guides, safety tips, and language support.
+- **Epic Buy:** Explore shopping destinations and local products.
 
 ## Table of Contents
 - [Installation](#installation)
